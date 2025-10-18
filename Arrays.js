@@ -23,16 +23,18 @@ console.log(sum)
 //Purpose: To pick elements from an array that match a condition.
 // Returns: A new array with only the elements that pass the test.
 // When to use: If you want to remove unwanted elements or extract a subset.
-let total = marks.reduce((sum,mark)=> sum+mark,0)
-console.log(sum)
+let scores=[10,20,23,45,60,62]
+let even = scores.filter(even=>even%2==0)   
+console.log(even)
+
+
 
 // get even numbers in an array
 // Purpose: To combine all elements into a single value.
 // Returns: A single result (number, string, object, etc.).
 // When to use: If you want to aggregate values (sum, product, max, etc.).
-let scores=[10,20,23,45,60,62]
-let even = scores.filter(even=>even%2==0)   
-console.log(even)
+let total = marks.reduce((sum,mark)=> sum+mark,0)
+console.log(sum)
 
 
 // Purpose: To transform each element of an array.

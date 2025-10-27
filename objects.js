@@ -1,4 +1,5 @@
 //collections of properties - objects
+const Person = require ("./classs") //importing external class
 
 let person = {
     firstName: 'Sowmya',
@@ -22,3 +23,9 @@ console.log('gender' in person) //to check if the property is present in a objec
 for(let key in person){
     console.log(person[key]) //prints all the props in a object
 }
+
+
+
+//creating obj for the imported class
+let p = new Person("h","d")
+console.log("vvv"+p.fullName())

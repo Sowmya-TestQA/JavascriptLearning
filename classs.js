@@ -35,4 +35,4 @@ class Person
 
 module.exports= Person
 
-//its like a framework where we put all the reusable methods and other stuffs and epxort the class. all the other classes will reuse this class and its functions.
+//its like a framework where we put all the reusable methods and other stuffs and export the class. all the other classes will reuse this class and its functions.

@@ -6,7 +6,7 @@ let person = {
     lastName: 'Shan',
     age : 24,
     fullName : function(){
-       this.firstName + this.lastName
+       return this.firstName + this.lastName
     } //anonymous fxn that concatenates fname and lname dynamically for huge set of records.
 }
 console.log(person.fullName())
@@ -21,9 +21,10 @@ console.log('gender' in person) //to check if the property is present in a objec
 
 //to iterate objects use enhanced for loops
 for(let key in person){
-    console.log(person[key]) //prints all the props in a object
+    if(typeof person[key]== "function"){console.log("hi "+person[key]())}
+    else {console.log("hi "+person[key]) //prints all the props in a object
 }
-
+}
 
 
 //creating obj for the imported class

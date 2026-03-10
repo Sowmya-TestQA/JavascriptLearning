@@ -30,34 +30,45 @@ console.log(even)
 
 
 
-// // get even numbers in an array
-// // Purpose: To combine all elements into a single value.
-// // Returns: A single result (number, string, object, etc.).
-// // When to use: If you want to aggregate values (sum, product, max, etc.).
-// let total = marks.reduce((sum,mark)=> sum+mark,0)
-// console.log(sum)
+// get even numbers in an array
+// Purpose: To combine all elements into a single value.
+// Returns: A single result (number, string, object, etc.).
+// When to use: If you want to aggregate values (sum, product, max, etc.).
+let total = marks.reduce((sum,mark)=> sum+mark,0)
+console.log(sum)
 
 
-// // Purpose: To transform each element of an array.
-// // Returns: A new array with the same number of elements, but values changed.
-// // When to use: If you want to modify every element.
+// Purpose: To transform each element of an array.
+// Returns: A new array with the same number of elements, but values changed.
+// When to use: If you want to modify every element.
 
-// let multiply =[1,2,3,4,5]
-// let newvalue = multiply.map(multiplies=>multiplies*3)
-// console.log(newvalue)
+let multiply =[1,2,3,4,5]
+let newvalue = multiply.map(multiplies=>multiplies*3)
+console.log(newvalue)
 
-// let scores1=[10,20,23,45,60,62]
-// // we can chain all the actions like streams in java here in JS like below
-// let finalvalue = scores1.filter(even=>even%2==0).map(multiplies=>multiplies*3).reduce((sum,mark)=> sum+mark,0)
-// console.log(finalvalue)
+let scores1=[10,20,23,45,60,62]
+// we can chain all the actions like streams in java here in JS like below
+let finalvalue = scores1.filter(even=>even%2==0).map(multiplies=>multiplies*3).reduce((sum,mark)=> sum+mark,0)
+console.log(finalvalue)
 
-// //sort strings--> use sort() method
+//sort strings--> use sort() method
 
-// let fruits =["mango","kiwi","pomegranate","apple"]
-// console.log(fruits.sort())
+let fruits =["mango","kiwi","pomegranate","apple"]
+console.log(fruits.sort())
 
-// //number sort -> sort() wont work. We need to use bubble sort way
+//number sort -> sort() wont work. We need to use bubble sort way
 
-// let number1 = [1,9,5,2,4]
-// console.log(number1.sort((a,b)=>a-b)) //ascending order
-// console.log(number1.sort((a,b)=>b-a)) //descending order
+let number1 = [1,9,5,2,4]
+console.log(number1.sort((a,b)=>a-b)) //ascending order
+console.log(number1.sort((a,b)=>b-a)) //descending order
+// for(let i=0; i<number1.length ; i++){
+//     for (let j=i+1; j<number1.length; j++){
+//         if(number1[i]>number1[j]){
+//             let temp = number1[i];
+//             number1[i] = number1[j];
+//             number1[j]=temp;
+
+//         }
+//     }
+// }
+// console.log("Sorted "+number1)

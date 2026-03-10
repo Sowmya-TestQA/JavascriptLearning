@@ -15,3 +15,4 @@ let quote = day + "is beautiful"
 console.log(quote)
 let val = quote.indexOf("d",5)
 console.log(val)
+
